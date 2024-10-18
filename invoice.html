@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crowning Glory Hats and Apparel - Invoice</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .invoice-container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .invoice-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .invoice-header h1 {
+            color: #ff33aa;
+            font-size: 2rem;
+        }
+
+        .invoice-details {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .invoice-total {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            text-align: right;
+        }
+
+        .invoice-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #ff33aa;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #e0298c;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <h1>Invoice</h1>
+        <div class="invoice-items" id="invoiceItems">
+            
+        </div>
+        <div class="invoice-summary">
+            <p>Subtotal: <span id="subtotal"></span></p>
+            <p>Tax (15%): <span id="tax"></span></p>
+            <p>Total: <span id="total"></span></p>
+            <p>Inovice Date:<span id="invoiceDate"></span></p>
+
+        </div>
+
+        <div class="button-container"> <!--Container for the action buttons-->
+            <button id="cancelBtn">Cancel</button>
+            <button id="exitBtn">Exit</button>
+        </div>
+    </div>
+    <script src="invoice.js"></script>
+        
+</body>
+</html>

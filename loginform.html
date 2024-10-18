@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>Crowning Glory Hats and Apparel - Login</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; 
+        }
+
+        header {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .logo {
+            width: 200px; 
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            color: rgb(233, 123, 141);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            text-align: left;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: rgb(235, 62, 91);
+            color: white;
+            padding: 0.5rem;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(235, 62, 91);
+        }
+
+        #error-message {
+            color: red;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a></li> <!--Link to the home page-->
+        </nav>
+        <img src="../service/Crowning.jpg.png" alt="Crowning Glory Logo" class="logo">
+    </header>
+    <div class="login-container">
+        <h1>Crowning Glory Hats and Apparel</h1>
+         <h2>Login</h2>
+         
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+            
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <script src="loginform.js"></script>
+</body>
+</html>

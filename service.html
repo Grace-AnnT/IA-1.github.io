@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crowning Glory Hats and Apparel - Products/Service Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+            border-bottom:pink;
+        }
+
+        .logo {
+            width: 200px; 
+            margin-right: 100px;
+        }
+
+        .page-title {
+            font-size: 2rem;
+            color: #ff33aa;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            width: 200px;
+            margin: 20px;
+            text-align: center;
+        }
+        .product-item img {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .product-item h3 {
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff33aa;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+            
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../service/Crowning.jpg.png" alt="Crowning Glory Logo" class="logo">
+        <h1 class="page-title" >Crowning Glory Collections</h1> &nbsp; &nbsp;
+    </header>
+    <hr style="color:hsl(350, 86%, 80%);">
+
+    <h5 style="font-size: 20px; text-align: center; color: #ff33aa;"> Chic Church Hats </h5>
+    <div class="content">
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="../service/imageproduct1.jpg" alt="Product 1">
+                <h3>Sunlit Glory</h3>
+                <p>$6500</p>
+                <input type="checkbox" class="product-checkbox" data-name="Sunlit Glory" data-price="6500">
+            </div>
+
+            <div class="product-item">
+                <img src="../service/imageproduct2.jpg" alt="Product 2">
+                <h3>Golden Bloom</h3>
+                <p>$5500</p>
+                <input type="checkbox" class="product-checkbox" data-name="Golden Bloom" data-price="5500">
+            </div>
+
+            <div class="product-item">
+                <img src="../service/imageproduct4.jpg" alt="Product 3" style="height: 260px; width:230px;">
+                <h3>Polka Prestige</h3>
+                <p>$6000</p>
+                <input type="checkbox" class="product-checkbox" data-name="Polka Prestige" data-price="6000">
+            </div>
+
+            <div class="product-item">
+                <img src="../service/imageproducts5.jpg" alt="Product 4" style="height: 260px; width:230px;">
+                <h3>Classic Dots</h3>
+                <p>$6000</p>
+                <input type="checkbox" class="product-checkbox" data-name="Classic Dots" data-price="6000">
+            </div>
+
+            <div class="product-item">
+                <img src="../service/imageproducts7.jpg" alt="Product 6" style="height: 260px; width:230px;">
+                <h3>Blossom Grace</h3>
+                <p>$6000</p>
+                <input type="checkbox" class="product-checkbox" data-name="Blossom Grace" data-price="6000">
+            </div>
+
+            <div class="product-item">
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <img src="../service/imageproducts11.jpg" alt="Product 7">
+                <h3>Pink Petal Charm</h3>
+                <p>$6000</p>
+                <input type="checkbox" class="product-checkbox" data-name="Pink Petal Charm" data-price="6000">
+            </div>
+
+            <div class="product-item">
+                <img src="../service/imageproducts8.jpg" alt="Product 5" style="height: 260px; width:250px;">
+                <h3>Zebra Zeal</h3>
+                <p>$6000</p>
+                <input type="checkbox" class="product-checkbox" data-name="Zebra Zeal" data-price="6000"> 
+            </div>
+        </div>
+    </div>
+
+    <h5 style="font-size: 20px; text-align: center; color: #ff33aa;">Graceful Attire</h5>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="../service/productimage12.jpg" alt="Product 9">
+                <h3>Elegant V-Neck Flutter Sleeve Dress</h3>
+                <p>$16,000</p>
+                <input type="checkbox" class="product-checkbox" data-name="Elegant V-Neck Flutter Sleeve Dress" data-price="16000">
+            </div>
+
+
+            <div class="product-item">
+                <img src="../service/productimage15.jpg" alt="Product 5" style="height: 260px; width:250px;">
+                <h3>White Elegant Collar Pleated Lace-Up-A-Hem</h3>
+                <p>$10,000</p>
+                <input type="checkbox" class="product-checkbox" data-name="Elegant Collar Pleated Lace-Up-A-Hem" data-price="10000">
+            </div>
+
+            <div class="product-item">
+                <img src="../service/imageproduct6.jpg" alt="Product 8">
+                <h3>Green Elegant Yellow Flare Dress</h3>
+                <p>$15,000</p>
+                <input type="checkbox" class="product-checkbox" data-name="Elegant Yellow Flare Dress" data-price="15000">
+            </div>
+            </div>
+
+            <div class="button-container">
+                <button id="checkOutBtn">CheckOut</button>
+                <button id="cancelBtn">Cancel</button>
+                <button id="exitBtn">Exit</button>
+            </div>
+              
+            <script src="service.js"></script> <!--Links the to Javascript code-->
+        </div>
+    </div>
+</body>
+</html>
